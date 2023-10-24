@@ -1,0 +1,17 @@
+package appinitial;
+
+public class MiPrimeraClase {
+
+	public static void main(String[] args) {
+
+		System.out.println("fin de la primera clase");
+		for (int a = 0; a <= 50; a++) {
+			
+			String b = (a%2 == 0) ? String.copyValueOf(a) : "marameo";
+			
+				System.out.println(b);
+			
+		}
+		System.out.println("the end");
+	}
+}

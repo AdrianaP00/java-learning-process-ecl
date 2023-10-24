@@ -1,0 +1,10 @@
+package appinitial.basico;
+
+public class MainPersona {
+ public static void main(String[] args) {
+	System.out.println("main persona");
+	Persona persona = new Persona();
+	persona.edad = 23;
+	
+	}
+}

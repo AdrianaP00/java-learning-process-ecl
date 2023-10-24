@@ -1,0 +1,13 @@
+package appinitial;
+
+public class MiPrimeraClase {
+
+	public static void main(String[] args) {
+
+		System.out.println("fin de la primera clase");
+		for (int a = 0; a <= 50; a = a + 2) {
+			
+		}
+		System.out.println("the end");
+	}
+}

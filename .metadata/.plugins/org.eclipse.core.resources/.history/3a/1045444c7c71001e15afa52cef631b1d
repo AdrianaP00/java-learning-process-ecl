@@ -1,0 +1,29 @@
+package camino;
+
+import java.util.Scanner;
+
+public class OperacionExercise {
+		public static void main(String[] args) {
+//		1) 1 PROGRAMA QUE PIDA 10 NÚMEROS AL USUARIO Y LOS IMPRIMA POR PANTALLA
+//		2) 1 PROGRAMA QUE PIDA 10 NÚMEROS AL USUARIO Y DIGA CUÁNTOS IMPARES HAY DE ESOS DIEZ
+//		3) 1 PROGRAMA QUE PIDA 10 NÚMEROS Y DIGA LA SUMA DE LOS 10
+//		4) 1 PROGRAMA QUE PIDA 10 NÚMEROS Y DIGA EL MAYOR DE LOS 10
+//		5) 1 PROGRAMA QUE PIDA 10 NÚMEROS Y DIGA EL MAYOR, LA MEDIA Y EL MENOR
+			
+		Scanner scanner = new Scanner(System.in);
+		int numeroLeido;
+		
+		do {
+			System.out.println("Dame 10 numeros: ");
+			numeroLeido = scanner.nextInt();
+			if (numeroLeido % 2 != 0) {
+	            System.out.println(numeroLeido);
+	            
+			} else {
+				System.out.println("no no no");
+			}
+		} while (numeroLeido != 10);
+
+		
+		}
+}
