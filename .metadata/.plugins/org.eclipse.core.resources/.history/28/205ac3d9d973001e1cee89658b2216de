@@ -1,0 +1,56 @@
+package juegoNumerosAleatorio;
+
+import java.util.Scanner;
+
+public class JuegoNumerosAleatorio {
+	/**
+	 * HACED UN PROGRAMA QUE JUEGUE CON EL USUARIO A ADIVINAR UN NÚMERO
+	 * 
+	 * EL PROGRAMA (LA MÁQUINA) PIENSA UN NÚMERO ALEATORIO ENTRE 1 Y 100
+	 * 
+	 * Y LE DA 5 OPORTUNIDADES AL USUARIO PARA AVERIGUARLO
+	 * 
+	 * POR CADA INTENTO, EL PROGRAMA LE DA UNA PISTA AL USUARIO.
+	 * 
+	 * SI EL NÚMERO INTRODUCIDO ES MENOR QUE EL QUE TIENE QUE ADIVINAR, LE DA EL
+	 * MENSAJE DE "BUSCO NUMERO MAYOR"
+	 * 
+	 * SI EL NÚMERO INTRODUCIDO ES MAYOR QUE EL QUE TIENE QUE ADIVINAR, LE DA EL
+	 * MENSAJE DE "BUSCO NUMERO MENOR"
+	 * 
+	 * SI EL USUARIO ACIERTA, LE DAMOS UN MENSAJE DE ENHORABUENA
+	 * 
+	 * Y SI SE QUEDAN SIN INTENTOS, LE DECIMOS "GAME OVER" Y LE DAMOS LA SOLUCIÓN
+	 * DEL NÚMERO BUSCADO
+	 */
+	public class MainGame {
+		public static void main(String[] args) {
+
+			Scanner scanner = new Scanner(System.in);
+			System.out.println();
+			int intentos = 5;
+			int numeroSecreto = (int) (Math.random() * 100) + 1;
+			boolean adivinado = true;
+
+			System.out.println("Bienvenido en el juego! Tienes 5 intentos para adi vinar el numero");
+			System.out.println("inserta un numero entre 0 y 100: ");
+
+			do {
+				System.out.println("intento numero"+ (intentos + 1));
+				int numeroInsertado = scanner.nextInt();
+				intentos--;
+
+				if(numeroInsertado == numeroSecreto) {
+					adivinado = true;
+					System.out.println("you win!");
+				} else if (numeroInsertado < numeroSecreto) {
+					System.out.println("casi!!"+ numeroInsertado + "es menor");
+				} else if (numeroInsertado > numeroSecreto) {
+					System.out.println("casi!!"+ numeroInsertado + "es mayor");
+				} 
+			} while (intentos == 0);
+
+		}
+
+	}
+}
