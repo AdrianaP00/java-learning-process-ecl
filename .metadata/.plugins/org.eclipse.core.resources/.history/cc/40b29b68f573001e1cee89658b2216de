@@ -12,7 +12,7 @@ public class JuegoNumerosAleatorio {
 //				  console.log(`start`);
 //				  console.log(`exit`);
 //				  let menu = prompt(``).toLowerCase();
-//				  return int ;
+//				  return;
 //				}
 
 			System.out.println("¡Bienvenido al juego de adivinar el número entre 1 y 100!");
@@ -40,7 +40,7 @@ public class JuegoNumerosAleatorio {
 			do {
 				// menu()
 //				  switch (menu()) {
-//                  case start:
+//                  case 1:
 //                      (System.out.print("Ingresa un número: ");
 //                      int numeroUsuario = scanner.nextInt();
 //
@@ -54,7 +54,7 @@ public class JuegoNumerosAleatorio {
 //                      }
 //                      break;)			       
 //
-//                  case exit:
+//                  case 2:
 //                      mensajeSalir();
 //                      break;
 //
