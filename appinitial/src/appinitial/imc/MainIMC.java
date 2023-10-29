@@ -24,7 +24,7 @@ public class MainIMC {
 		float altura = scanner.nextFloat();
 		
 		String imcNominal = null;
-		double imcNumerico= peso / Math.pow(altura, 2);
+		double imcNumerico= peso / altura * altura;
 		
 		if (imcNumerico<16)
 		{
